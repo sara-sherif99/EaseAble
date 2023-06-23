@@ -1,0 +1,6 @@
+{
+    "/api": {
+    "target": "https://eco-back-9qg1.onrender.com",
+    "secure": false
+    }
+}
