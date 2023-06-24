@@ -104,9 +104,9 @@ Signup(){
   var email=this.form.controls["email"].value;
   var password=this.form.controls["password"].value;
   var confirmpassword=this.form.controls["confirmPassword"].value;
-  var gender=this.form.controls["gender"].value;
-  var gen = gender=="Male"?0:1;
-  var user = {userName,email,password,gen}
+  var gen=this.form.controls["gender"].value;
+  var gender = gen=="Male"?1:0;
+  var user = {userName,email,password,gender}
   console.log(user)
   
   if(password==confirmpassword &&this.form.get('password')?.valid && this.form.get('email')?.valid &&this.form.get('username')?.valid){
