@@ -10,10 +10,10 @@ export class UserService {
 
   }
   // private userURL = "https://eco-back-9qg1.onrender.com/user";
-  private userURL = "https://localhost:7032/api/User";
-  private cartURL = "https://localhost:7032/api/Carts";
-  private orderURL = "https://localhost:7032/api/Orders";
-  private imgURL = "https://localhost:7032/api/User/image";
+  private userURL = "https://abilitysystem.azurewebsites.net/api/User";
+  private cartURL = "https://abilitysystem.azurewebsites.net/api/Carts";
+  private orderURL = "https://abilitysystem.azurewebsites.net/api/Orders";
+  private imgURL = "https://abilitysystem.azurewebsites.net/api/User/image";
 
   // addToWishList(userId: any, productId: any) {
   //   return this.myClient.patch<any>(`${this.userURL}/wishlist/${userId}`, { productId: productId });
