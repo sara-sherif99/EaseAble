@@ -8,8 +8,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class CategoryService {
 
   constructor(private myClient: HttpClient) { }
-  private categoryURL = "https://localhost:7032/api/Category";
-  private categoryWithProductsURL = "https://localhost:7032/api/Category/products";
+  private categoryURL = "https://abilitysystem.azurewebsites.net/api/Category";
+  private categoryWithProductsURL = "https://abilitysystem.azurewebsites.net/api/Category/products";
 
   getAllCategories() {
     return this.myClient.get(this.categoryURL);
