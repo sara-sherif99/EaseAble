@@ -30,5 +30,6 @@ export class AboutComponent {
     this.nav.about=true;
     this.nav.home=false;
     this.nav.shop=false;
+    
   }
 }
