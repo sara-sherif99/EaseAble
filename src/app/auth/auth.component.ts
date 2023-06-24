@@ -77,7 +77,7 @@ export class AuthComponent {
     var password=this.logForm.controls["password"].value;
 
     if(this.logForm.get('password')?.valid && this.logForm.get('email')?.valid){
-      this.http.post<any>('https://localhost:7032/api/User/Login', {email,password}).subscribe(
+      this.http.post<any>('https://abilitysystem.azurewebsites.net/api/User/Login', {email,password}).subscribe(
       (response) => {
         localStorage.setItem('isLoggedIn', "true");
         localStorage.setItem('token',response.token);
@@ -110,7 +110,7 @@ Signup(){
   console.log(user)
   
   if(password==confirmpassword &&this.form.get('password')?.valid && this.form.get('email')?.valid &&this.form.get('username')?.valid){
-    this.http.post<any>('https://localhost:7032/api/User/Register',user ).subscribe(
+    this.http.post<any>('https://abilitysystem.azurewebsites.net/api/User/Register',user ).subscribe(
     (response) => {
       //localStorage.setItem('user', JSON.stringify(response.user));
       localStorage.setItem('token',response.token);
