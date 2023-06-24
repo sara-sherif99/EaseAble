@@ -2,7 +2,7 @@ import { ChangeDetectorRef, Component, Inject, Optional } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, Router, Routes, RouterLinkActive ,RouterModule } from '@angular/router';
-import { faEye, faSeedling, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faHeartPulse, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClient } from '@angular/common/http';
 import { LoginService } from '../services/login/login.service';
@@ -22,7 +22,7 @@ export class AuthComponent {
   sign:boolean=false;
 
   faEye=faEye;
-  faSeedling=faSeedling;
+  faHeartPulse=faHeartPulse;
   faEyeSlash=faEyeSlash;
 
   submitted: boolean=false;
