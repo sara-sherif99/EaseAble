@@ -10,12 +10,11 @@ export class ProductService {
   maxprice:any;
 
   constructor(private myClient: HttpClient) {}
-  // private productURL = "https://eco-back-9qg1.onrender.com/product";
-  private productURL = "https://localhost:7032/api/Product";
-  private productOnSaleURL = "https://localhost:7032/api/Product/sale";
-  private productsCountURL = "https://localhost:7032/api/Product/count";
-  private productPageURL = "https://localhost:7032/api/Product/filter";
-  private productsMaxPriceURL = "https://localhost:7032/api/Product/maxprice";
+  private productURL = "https://abilitysystem.azurewebsites.net/api/Product";
+  private productOnSaleURL = "https://abilitysystem.azurewebsites.net/api/Product/sale";
+  private productsCountURL = "https://abilitysystem.azurewebsites.net/api/Product/count";
+  private productPageURL = "https://abilitysystem.azurewebsites.net/api/Product/filter";
+  private productsMaxPriceURL = "https://abilitysystem.azurewebsites.net/api/Product/maxprice";
   
   //Methods
 
